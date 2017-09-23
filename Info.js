@@ -1,7 +1,8 @@
 function Info() {
   use echonia;
+  var Embed = "";
   if (echonia[UserID]) {
-    resp = "{embed:\
+    Embed = "{embed:\
       {type:rich}\
       {color:#bb29f9}\
       {title:	𝖄𝖔𝖚 𝖍𝖆𝖛𝖊 𝖗𝖊𝖖𝖚𝖊𝖘𝖙𝖊𝖉 𝖞𝖔𝖚𝖗 𝖈𝖎𝖙𝖞 𝖉𝖆𝖙𝖆:}\
@@ -13,5 +14,6 @@ function Info() {
 𝕮𝖎𝖙𝖞: *" + prs(echonia[UserID])["City"] + "*\
       }\
     }";
+  return Embed;
   };
 };
