@@ -23,7 +23,7 @@ function UserObject(CurrentObject, City, Cash, Bank, Experience, Level, Game) {
     obj["Bank"] = prs(CurrentObject)["Bank"];
   }
   if (Experience !== "") {
-    obj["Experience"] = City;
+    obj["Experience"] = Experience;
   } else {
     obj["Experience"] = prs(CurrentObject)["Experience"];
   }
@@ -32,8 +32,8 @@ function UserObject(CurrentObject, City, Cash, Bank, Experience, Level, Game) {
   } else {
     obj["Level"] = prs(CurrentObject)["Level"];
   }
-  if (City !== "") {
-    obj["Game"] = City;
+  if (Game !== "") {
+    obj["Game"] = Game;
   } else {
     obj["Game"] = prs(CurrentObject)["Game"];
   }
