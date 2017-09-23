@@ -12,7 +12,7 @@ function UserObject(CurrentObject, City, Cash, Bank, Experience, Level, Game) {
   } else {
     obj["City"] = prs(CurrentObject)["City"];
   }
-  if (City !== "") {
+  if (Cash !== "") {
     obj["Cash"] = Cash;
   } else {
     obj["Cash"] = prs(CurrentObject)["Cash"];
