@@ -1,4 +1,4 @@
-function obj(CurrentObject, City, Cash, Bank, Experience, Level, Game) {
+function UserObject(CurrentObject, City, Cash, Bank, Experience, Level, Game) {
 	var obj = {
 		"City": "",
 		"Cash": 0,
